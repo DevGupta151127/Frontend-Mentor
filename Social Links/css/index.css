@@ -1,0 +1,92 @@
+/* General styles for all devices */
+body {
+    background-color: rgba(0, 0, 0, 0.932);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.Social-media {
+    background-color: rgba(128, 128, 128, 0.099);
+    margin: 5% auto; /* Center the container and add vertical spacing */
+    max-width: 20%; /* Make the container width flexible */
+    padding: 50px;
+    border: 1px solid;
+    border-radius: 5px;
+    border-style: none;
+    text-align: center;
+}
+
+img {
+    width: 100px;
+    border-radius: 100px;
+}
+
+h1 {
+    color: white;
+}
+
+#place {
+    color: rgb(150, 208, 35);
+}
+
+p {
+    color: white;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: rgba(128, 128, 128, 0.173);
+    color: white;
+    width: 220px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    border-style: none;
+}
+
+button:hover {
+    background-color: yellow;
+    color: black;
+    cursor: pointer;
+}
+
+/* Media queries for responsiveness */
+
+/* Tablets and small screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .Social-media {
+        max-width: 80%; /* Adjust container width */
+        padding: 40px;
+    }
+
+    img {
+        width: 80px; /* Slightly reduce image size */
+    }
+
+    button {
+        width: 180px; /* Adjust button width */
+    }
+}
+
+/* Mobile phones (max-width: 480px) */
+@media (max-width: 480px) {
+    .Social-media {
+        max-width: 95%; /* Almost full width on mobile */
+        padding: 30px;
+    }
+
+    img {
+        width: 70px; /* Smaller image on mobile */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Reduce heading size */
+    }
+
+    button {
+        width: 150px; /* Adjust button width further */
+        padding: 8px; /* Slightly reduce padding */
+    }
+}
